@@ -20,7 +20,7 @@ const withDefaultLayout = Page => {
                 <Content style={{marginTop: 64}}>
                     <Page {...props}/>
                 </Content>
-                <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer>
+                <Footer style={{textAlign: 'center'}}>Sound Lock ©2020 Created by Sound Lock</Footer>
             </Layout>
         );
     };

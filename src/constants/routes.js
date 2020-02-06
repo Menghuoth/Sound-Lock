@@ -5,18 +5,19 @@ import ArtistDetailPage from '../pages/artist_detail';
 import AlbumPage from "../pages/album"
 import OldAlbumDetailPage from "../pages/album/album-detail"
 import AlbumDetailPage from '../pages/AlbumDetailPage';
+import LoginPage from "../pages/LoginPage";
 
 import OldHome from '../pages/home';
 
 export default [
     {
         url: '/',
-        component: HomePage
-    },
-    {
-        url: '/old-home',
         component: OldHome
     },
+    // {
+    //     url: '/old-home',
+    //     component: OldHome
+    // },
     {
         url: '/about',
         component: AboutPage
@@ -36,6 +37,10 @@ export default [
     {
         url: '/old-album-detail/:id',
         component: OldAlbumDetailPage
+    },
+    {
+        url: '/login',
+        component: LoginPage
     },
 
 

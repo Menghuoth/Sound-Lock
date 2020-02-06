@@ -3,7 +3,7 @@ export const getSliderThumbnailsService = async () => {
     const MOCK_SLIDERS = ["facebook", "youtube", "twitter"].map(key => ({
         key: key,
         link: `https://www.`+key+`.com`,
-        imageUrl: `https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg`
+        imageUrl: `https://lh3.googleusercontent.com/proxy/xVPBCAI1_QDHfDxKkKEAM6EKbhZGyFzAw4IWXrddDvgSRUJrZOzYLG0Nh7e4lDHNpohjwBgeVa6ooR2n3BGfpMU9WXtSh7_J8Ic`
     }))
     return {
         data : MOCK_SLIDERS

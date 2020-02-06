@@ -11,7 +11,7 @@ const ADDITION_TRACK_INFO = (index) =>  {
 }
 // replace with request from server later
 export const getTracksByCategory = async (key) =>  {
-    const MOCK_DATA = Array(10).fill("").map((uselessString, index) => ({
+    const MOCK_DATA = Array(4).fill("").map((uselessString, index) => ({
         key: index,
         name: `${key} Song #${index}`,
         imageUrl: `https://steamuserimages-a.akamaihd.net/ugc/100603690267095854/9D7B84FE1FCE7E15EA2A1B18210B13C1C12242F1/`,
@@ -25,7 +25,7 @@ export const getTracksByCategory = async (key) =>  {
 
 // replace with request from server later
 export const getRecommendationTracksService = async (key) =>  {
-    const MOCK_DATA = Array(5).fill("").map((uselessString, index) => ({
+    const MOCK_DATA = Array(4).fill("").map((uselessString, index) => ({
         key: index,
         name: `Recommendation Song #${index}`,
         imageUrl: `https://zirkonyumimplant.info/wp-content/uploads/2018/10/music-notes-wallpaper-music-notes-wallpaper-music-notes-wallpapers-free-3-music-notes-wallpaper-music-notes-wallpaper-hd.jpg`,

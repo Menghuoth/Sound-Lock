@@ -33,24 +33,6 @@ const ArtistInfoAreaComponent = (props) => {
                     size={250}
                 />
             </Col>
-
-            <Col sm={24} md={12} style={{flexGrow:1, textAlign:"center"}}>
-
-                <Descriptions
-                    bordered
-                    title={<Title>{artist.name}</Title>}
-                    column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
-                >
-                    <Descriptions.Item label="Product">Cloud Database</Descriptions.Item>
-                    <Descriptions.Item label="Billing">Prepaid</Descriptions.Item>
-                    <Descriptions.Item label="time">18:00:00</Descriptions.Item>
-                    <Descriptions.Item label="Amount">$80.00</Descriptions.Item>
-                    <Descriptions.Item label="Discount">$20.00</Descriptions.Item>
-                    <Descriptions.Item label="Official">$60.00</Descriptions.Item>
-
-                </Descriptions>
-            </Col>
-
         </Row>
     )
 

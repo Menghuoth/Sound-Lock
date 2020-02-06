@@ -17,7 +17,7 @@ const logoStyle = {
 const Header = props => {
 
     return (
-        <AntdHeader style={{ position: 'fixed', zIndex: 1, width: '100%', background: 'green' }}>
+        <AntdHeader style={{ position: 'fixed', zIndex: 1, width: '100%', background: 'black' }}>
             <Row type="flex" justify="space-between">
                 <Col>
                     <Avatar style={logoStyle} src="https://via.placeholder.com/468x60?text=Logo" />

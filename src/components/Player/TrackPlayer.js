@@ -1,10 +1,13 @@
 import React from 'react';
 import PropType from "prop-types"
-import { Button, Icon } from 'antd';
+import { Divider, Row } from 'antd';
 import Modal from "antd/es/modal"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLongArrowAltDown} from "@fortawesome/free-solid-svg-icons"
+import {faLongArrowAltDown} from "@fortawesome/free-solid-svg-icons";
+import playIcon from '../../assets/icons/play-button.png';
+import downloadIcon from '../../assets/icons/download.png';
+
 
 const TrackPlayerComponent = (props) => {
     const { track } = props
@@ -45,11 +48,11 @@ const TrackPlayerComponent = (props) => {
     }
 
     return (
-        <span>
-            <Icon onClick={onPlayClick} type="play-square" />
-            <FontAwesomeIcon icon={faLongArrowAltDown} onClick={onDownloadClick}/>
-            {/*<Button onClick={onDownloadClick}>Download</Button>*/}
-        </span>
+        <Row type="flex" justify="center">
+            <img src={playIcon} alt="play" onClick={onPlayClick} style={{width: '36px', height: '36px', cursor: 'pointer'}}/>
+            <Divider type="vertical"/>
+            <img src={downloadIcon} alt="download" onClick={onDownloadClick} style={{width: '36px', height: '36px', cursor: 'pointer'}}/>
+        </Row>
     )
 }
 

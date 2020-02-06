@@ -92,7 +92,7 @@ const AlbumPage = props => {
                         current={pagination.page}
                         pageSize={10}
                         onChange={onPaginationChanged}
-                    />
+                      />
 
                 </Row>
             </Card>

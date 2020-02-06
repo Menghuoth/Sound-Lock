@@ -32,9 +32,9 @@ const ClientLayout = props => {
             key: "album"
         },
         {
-            link: "/about",
-            label: "About",
-            key: "about"
+            link: "/artist",
+            label: "Artist",
+            key: "artist"
         },
         {
             link: "/login",
@@ -63,6 +63,7 @@ const ClientLayout = props => {
                 {/* Page Center , decorated in style */}
                 <div className={styles.headerCenterArea}>
                     <Menu
+                        theme={"dark"}
                         className={styles.menu}
                         mode="horizontal"
                         selectedKeys={pageKey}
@@ -89,7 +90,7 @@ const ClientLayout = props => {
             </Header>
 
             {/* Page Content is the children of props , render page content it here */}
-            <Content style={{padding:"24px"}}>
+            <Content style={{background:"#fff"}}>
                 {props.children}
             </Content>
         </Layout>

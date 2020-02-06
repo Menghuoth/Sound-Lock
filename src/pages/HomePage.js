@@ -8,12 +8,13 @@ import { getRecommendationTracksService } from '../services/tracks_service';
 import RecommendedMusicList from '../components/home/RecommendedMusicList';
 
 import './styles.css';
+import RecommendedMusicByCategoryList from "../components/home/RecommendedMusicByCategoryList";
 
 
 const HomePage = props => {
     // States
     const [sliders, setSliders] = useState([]);
-    const [recommendedMusic, setRecommendedMusic] = useState([])
+    const [recommendedMusic, setRecommendedMusic] = useState([]);
 
     // Methods
     const syncSliders = () => {
@@ -27,8 +28,7 @@ const HomePage = props => {
     const syncMusics = () => {
         return getRecommendationTracksService()
             .then(response => {
-                const recommendedMusics = response.data
-                setRecommendedMusic(recommendedMusics)
+                setRecommendedMusic(response.data)
             })
     }
 
