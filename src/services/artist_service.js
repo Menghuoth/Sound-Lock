@@ -23,6 +23,21 @@ export const getPopularArtistsService = async ( ) => {
     }
 }
 
+// function capitalize  (str= "")  {
+//     return str[0].toUpperCase() + str.slice(1)
+// }
+//
+// export const getPopularArtistsService = async () => {
+//     const MOCK_DATA = ["Khmer","Chinese","English"].map( type =>  ({
+//         label: capitalize(type),
+//         key: type,
+//     }))
+//
+//     return {
+//         data: MOCK_DATA
+//     }
+// }
+
 export const getArtistByIDService = async (id) => {
     const MOCK_DATA = {
         name: `Artist #${id}`,

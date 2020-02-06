@@ -18,6 +18,7 @@ const RecommendationAreaComponent = (props) => {
             <Row gutter={24} className={styles.recommendationRow}>
 
                 {tracks.map(track => {
+                    track = track.song;
                     return (
                         <Col sm={12} md={6}>
                             <TrackComponent track={track} />

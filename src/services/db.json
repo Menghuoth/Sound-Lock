@@ -1,0 +1,111 @@
+{
+  "sliders": [
+    {
+      "id": "facebook",
+      "link": "https://www.facebook.com",
+      "imageUrl": "https://images.wallpaperscraft.com/image/sheet_music_music_drawing_82428_1920x1080.jpg"
+    },
+    {
+      "id": "youtube",
+      "link": "https://www.youtube.com",
+      "imageUrl": "https://wallpapermemory.com/uploads/393/cool-music-wallpaper-full-hd-49972.jpg"
+    },
+    {
+      "id": "twitter",
+      "link": "https://www.twitter.com",
+      "imageUrl": "https://thewallpaper.co//wp-content/uploads/2019/10//rock-rb-cinema-images-jazz-folk-bluegrass-soul-blues-hd-wallpapers-guitar-music-wallpaper-jpg.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "label": "POP"
+    },
+    {
+      "id": 2,
+      "label": "ROCK"
+    },
+    {
+      "id": 3,
+      "label": "SAD"
+    }
+  ],
+  "langu": [
+    {
+      "id": 1,
+      "label": "POP"
+    },
+    {
+      "id": 2,
+      "label": "ROCK"
+    },
+    {
+      "id": 3,
+      "label": "SAD"
+    }
+  ],
+  "artists": [
+    {
+      "id": 0,
+      "name": "Artist #0",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10
+    }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "name": "1's Song #1",
+      "imageUrl": "https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg",
+      "artistId": 0,
+      "categoryId": 1,
+      "trackUrl": "/assets/test.mp3"
+    },
+    {
+      "id": 2,
+      "name": "2's Song #2",
+      "imageUrl": "https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg",
+      "artistId": 0,
+      "categoryId": 1,
+      "trackUrl": "/assets/test.mp3"
+    },
+    {
+      "id": 3,
+      "name": "3's Song #3",
+      "imageUrl": "https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg",
+      "artistId": 0,
+      "categoryId": 2,
+      "trackUrl": "/assets/test.mp3"
+    },
+    {
+      "id": 4,
+      "name": "4's Song #4",
+      "imageUrl": "https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg",
+      "artistId": 0,
+      "categoryId": 2,
+      "trackUrl": "/assets/test.mp3"
+    },
+    {
+      "id": 5,
+      "name": "5's Song #5",
+      "imageUrl": "https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg",
+      "artistId": 0,
+      "categoryId": 3,
+      "trackUrl": "/assets/test.mp3"
+    }
+  ],
+  "recommendedSongs": [
+    {
+      "songId": 1
+    },
+    {
+      "songId": 2
+    },
+    {
+      "songId": 3
+    },
+    {
+      "songId": 4
+    }
+  ]
+}

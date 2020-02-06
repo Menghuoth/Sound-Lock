@@ -15,7 +15,7 @@ const SlidersAreaComponent = (props ) => {
                             <div
                                 onClick={() => onSliderClick(slider)}
                                 className={styles.sliderItemImage}
-                                style={{ backgroundImage: `url(${slider.imageUrl})` }}
+                                style={{ height:'500px' ,backgroundImage: `url(${slider.imageUrl})` }}
                             />
                         </div>
                     )

@@ -22,12 +22,12 @@ const CategoryAreaComponent = props => {
                 <SizedBox width={"10px"} />
                 <Menu
                     onClick={param => onCategoryChanged(param.key)}
-                    selectedKeys={selectedCategory}
+                    // selectedKeys={selectedCategory}
                     mode={"horizontal"}>
 
                     {availableCategories.map(category => {
                         return (
-                            <Menu.Item key={category.key} children={category.label} />
+                            <Menu.Item key={category.id} children={category.label} />
                         )
                     })}
                 </Menu>

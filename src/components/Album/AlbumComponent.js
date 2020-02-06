@@ -19,14 +19,14 @@ const AlbumComponent = props => {
 
     return (
         <Card
+            style={{marginTop: '10px'}}
             cover={
                 // Use for make avatar image to center
         <Link to="/album-detail/1">
-            <Avatar 
-                style={{margin:"auto"}}
+            <img
+                style={{ width: '100%' }}
                 src={album.imageUrl}
-                size={150}
-                shape={"square"} />
+                />
         </Link>
             }
         >
