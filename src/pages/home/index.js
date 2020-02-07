@@ -29,7 +29,7 @@ const HomePage = props => {
     const [availableArtists, setAvailableArtists] = useState([
         {
             id: 1,
-            label: "khmer"
+            label: "Khmer"
         },{
             id: 2,
             label: "Chinese"
@@ -111,7 +111,7 @@ const HomePage = props => {
         syncRecommendation()
         syncCategories()
         syncRecentlyTracks()
-        setSelectedArtist("khmer");
+        setSelectedArtist("Khmer");
         setSelectedCategory("1");
 
 

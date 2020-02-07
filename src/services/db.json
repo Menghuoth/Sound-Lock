@@ -36,7 +36,7 @@
       "name": "Artist #1",
       "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
       "total_songs": 10,
-      "language": "khmer"
+      "language": "Khmer"
     },
     {
       "id": 2,
@@ -71,7 +71,7 @@
       "name": "Artist #6",
       "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
       "total_songs": 10,
-      "language": "khmer"
+      "language": "Khmer"
     },
     {
       "id": 7,
@@ -85,7 +85,7 @@
       "name": "Artist #8",
       "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
       "total_songs": 10,
-      "language": "khmer"
+      "language": "Khmer"
     },
     {
       "id": 9,
@@ -93,6 +93,69 @@
       "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
       "total_songs": 10,
       "language": "English"
+    },
+    {
+      "id": 10,
+      "name": "Artist #10",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "English"
+    },
+    {
+      "id": 11,
+      "name": "Artist #11",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "Chinese"
+    },
+    {
+      "id": 12,
+      "name": "Artist #12",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "Khmer"
+    },
+    {
+      "id": 13,
+      "name": "Artist #13",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "English"
+    },
+    {
+      "id": 14,
+      "name": "Artist #14",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "Khmer"
+    },
+    {
+      "id": 15,
+      "name": "Artist #15",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "Chinese"
+    },
+    {
+      "id": 16,
+      "name": "Artist #16",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "Chinese"
+    },
+    {
+      "id": 17,
+      "name": "Artist #17",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "English"
+    },
+    {
+      "id": 18,
+      "name": "Artist #18",
+      "imageUrl": "https://rukminim1.flixcart.com/image/832/832/j1jlksw0/poster/d/c/x/medium-poster1964-music-record-vinyl-colorful-vintage-retro-on-original-imaet2mufc5vxzhh.jpeg?q=70",
+      "total_songs": 10,
+      "language": "Khmer"
     }
   ],
   "songs": [
