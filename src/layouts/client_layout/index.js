@@ -41,7 +41,6 @@ const ClientLayout = props => {
             label: "Login/Register",
             key: "login"
         },
-
     ]
 
     // when ( home , album , about )  click

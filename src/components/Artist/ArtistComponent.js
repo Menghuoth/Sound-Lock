@@ -17,15 +17,17 @@ const ArtistComponent = props => {
         <Card
             style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
             cover={
+        <Link to={`/artist-detail/${artist.key}`}>
                 <Avatar
                     shape={"circle"}
                     size={150}
                     src={artist.imageUrl} />
+        </Link>
             }>
 
             <Meta
                 style={{ textAlign: "center" }}
-                title={(<Link to={`/artist/${artist.key}`}>{artist.name}</Link>)}
+                title={(<Link to={`/artist-detail/${artist.key}`}>{artist.name}</Link>)}
                 description={`${artist.total_songs} songs`}
             />
 

@@ -5,6 +5,8 @@ import AlbumPage from "../pages/album"
 import OldAlbumDetailPage from "../pages/album/album-detail"
 import AlbumDetailPage from '../pages/AlbumDetailPage';
 import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
+import ArtistPage from "../pages/artist";
 
 import OldHome from '../pages/home';
 
@@ -18,7 +20,11 @@ export default [
     //     component: OldHome
     // },
     {
-        url: '/artist/:id',
+        url: '/artist',
+        component: ArtistPage
+    },
+    {
+        url: '/artist-detail/:id',
         component: ArtistDetailPage
     },
     {
@@ -36,6 +42,10 @@ export default [
     {
         url: '/login',
         component: LoginPage
+    },
+    {
+        url: '/register',
+        component: RegisterPage
     },
 
 

@@ -75,6 +75,7 @@ const data = [
 const AlbumDetailList = props => {
     return (
         <Table columns={columns} dataSource={data} pagination={false}/>
+
     );
 };
 

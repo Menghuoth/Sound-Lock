@@ -25,7 +25,7 @@ const HomePage = props => {
     const [selectedCategory, setSelectedCategory] = useState("")
     const [categoryTracks, setCategoryTracks] = useState([])
 
-    // jhhiuhuh
+    // popularArtist
     const [availableArtists, setAvailableArtists] = useState([
         {
             id: 1,

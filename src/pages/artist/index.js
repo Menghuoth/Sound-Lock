@@ -1,43 +1,56 @@
-import React, { useState, useEffect } from "react"
-import PropType from "prop-types"
-import Card from "antd/es/card"
-import Title from "antd/es/typography/Title"
-import styles from "./styles.module.css"
-import Menu from "antd/es/menu"
-import SizedBox from "../../components/SizedBox/SizedBox"
-import { Divider } from "antd"
-import { Row, Col } from "antd/es/grid"
-import TrackComponent from "../../components/Track/TrackComponent"
+import React, {useState, useEffect} from "react"
+import {Row, Col} from "antd/es/grid"
 import ClientLayout from "../../layouts/client_layout"
-import { getAlbumsService } from "../../services/album_services"
-import AlbumComponent from "../../components/Album/AlbumComponent"
-import Pagination from "antd/es/pagination"
+import ArtistComponent from "../../components/Artist/ArtistComponent";
+import Axios from "axios";
+import Card from "antd/es/card";
+import styles from "../album/styles.module.css";
+import Title from "antd/es/typography/Title";
+import SizedBox from "../../components/SizedBox/SizedBox";
+import Menu from "antd/es/menu";
+import {Divider} from "antd";
+import Pagination from "antd/es/pagination";
+import {getAlbumsService} from "../../services/album_services";
 
 const ArtistPage = props => {
+    const [artists, setArtists] = useState([]);
+    const syncArtists = () => {
+        Axios.get("http://localhost:5000/artists")
+            .then(res => {
+                setArtists(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            });
+    };
 
-    const [selectedType, setSelectedType] = useState("new")
-    const [artist, setArtist] = useState([])
+    const [selectedType, setSelectedType] = useState("Khmer")
     const [pagination, setPaginations] = useState({page:1})
 
     const types = [
         {
-            label: "New",
-            key: "new"
+            label: "Khmer",
+            key: "khmer"
         },
         {
-            label: "Hot",
-            key: "hot"
+            label: "Chinese",
+            key: "chinese"
+        },
+        {
+            label: "English",
+            key: "english"
         }
     ]
 
-    const syncArtist = (type = "new", pagination = {page:1}) => {
-        getArtistService(type, pagination)
+    const syncArtist = (type = "Khmer", pagination = {page:1}) => {
+        getAlbumsService(type, pagination)
             .then(resp => {
                 const response = resp.data
-                const artist = response
-                setArtist(artist)
+                const artists = response
+                setArtists(artists)
             })
     }
+
 
     const onTypesChanged = (newKey) => {
         setSelectedType(newKey)
@@ -48,18 +61,25 @@ const ArtistPage = props => {
     }
 
     useEffect(() => {
-        syncArtist(selectedType, pagination)
-    }, [selectedType, pagination])
+        syncArtists(selectedType, pagination);
+    }, [selectedType, pagination]);
 
     return (
         <ClientLayout>
+            {/*<Row>*/}
+            {/*    <Col sm={12} md={6} style={{width: "fit-content"}}>*/}
+            {/*        <ArtistComponent*/}
+            {/*            artist={artists}*/}
+            {/*        />*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
             <Card>
-                <div className={styles.artistCardHeader}>
-                    <Title level={4}>Artist</Title>
+                <div className={styles.albumsCardHeader}>
+                    <Title level={4}>Artist </Title>
                     <SizedBox width={"10px"} />
                     <Menu
                         onClick={param => onTypesChanged(param.key)}
-                        defaultSelectedKeys={"new"}
+                        defaultSelectedKeys={"Khmer"}
                         mode={"horizontal"}>
 
                         {types.map(type => {
@@ -74,7 +94,7 @@ const ArtistPage = props => {
 
                 <Row gutter={[24,10]} className={styles.recommendationRow}>
 
-                    {artist.map(album => {
+                    {artists.map(artist => {
                         return (
                             <Col sm={12} md={6}>
                                 <ArtistComponent artist={artist} />
@@ -98,22 +118,6 @@ const ArtistPage = props => {
             </Card>
         </ClientLayout>
     )
-}
-
-// Prop type use to make IDE recognize what accept api
-// from component
-AlbumPage.propTypes = {
-    availableCategories: PropType.array,
-    selectedCategory: PropType.any,
-    onCategoryChanged: PropType.func,
-    tracks: PropType.array
-}
-
-// default props is what set default to props
-// if no defaultProps , its value must be undefined
-AlbumPage.defaultProps = {
-    availableCategories: [],
-    tracks: []
 }
 
 export default ArtistPage
