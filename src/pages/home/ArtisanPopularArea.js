@@ -15,7 +15,7 @@ import CategoryAreaComponent from "./CategoryArea";
 const { Title } = Typography
 
 function ArtisanPopularAreaComponent (props){
-    const { artists, availableArtists, selectedCategory, onArtistChanged } = props
+    const { artists, availableArtists, onArtistChanged } = props
     return (
         <Card>
             {/*<div className={"styles.ArtistCardHeader"}>*/}
@@ -32,7 +32,7 @@ function ArtisanPopularAreaComponent (props){
 
                     {availableArtists.map(artist => {
                         return (
-                            <Menu.Item key={artist.id} children={artist.label} />
+                            <Menu.Item key={artist.label} children={artist.label} />
                         )
                     })}
                 </Menu>

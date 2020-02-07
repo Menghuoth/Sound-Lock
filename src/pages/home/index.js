@@ -29,13 +29,13 @@ const HomePage = props => {
     const [availableArtists, setAvailableArtists] = useState([
         {
             id: 1,
-            label: "Chinese"
+            label: "khmer"
         },{
             id: 2,
             label: "Chinese"
         },{
             id: 3,
-            label: "Chinese"
+            label: "English"
         }
     ])
     const [selectedArtist, setSelectedArtist] = useState("")
@@ -60,8 +60,8 @@ const HomePage = props => {
             })
     }
 
-    const syncPopularArtists = () => {
-        return getPopularArtistsService()
+    const syncPopularArtists = (key) => {
+        Axios.get(`http://localhost:5000/artists?language=${key}&_limit=6`)
             .then(response => {
                 const artists = response.data
                 setPopularArtists(artists)
@@ -95,7 +95,7 @@ const HomePage = props => {
     }
 
     const syncRecentlyTracks = () => {
-        getRecentlyAddedTracksService()
+            Axios.get('http://localhost:5000/songs?_sort=releasedDate&_order=asc&_limit=12&_expand=artist&_expand=category')
             .then(response => {
                 const tracks = response.data
                 setRecentlyAddedTracks(tracks)
@@ -111,8 +111,9 @@ const HomePage = props => {
         syncRecommendation()
         syncCategories()
         syncRecentlyTracks()
-        syncPopularArtists()
-        setSelectedArtist("1");
+        setSelectedArtist("khmer");
+        setSelectedCategory("1");
+
 
     }, [])
 
@@ -128,6 +129,13 @@ const HomePage = props => {
         syncCategoryTracks(selectedCategory)
     }, [selectedCategory])
 
+    useEffect(() => {
+        if (!selectedArtist) {
+            return
+        }
+        syncPopularArtists(selectedArtist)
+    }, [selectedArtist])
+
     const onSliderClick = (slider) => {
         alert("You are Click : " + slider.link)
     }
@@ -136,7 +144,6 @@ const HomePage = props => {
         setSelectedCategory(key)
     }
 
-    // hhdihiu
     const onArtistChanged = (key) => {
         setSelectedArtist(key)
     }

@@ -1,5 +1,4 @@
 import HomePage from '../pages/HomePage';
-import AboutPage from '../pages/about';
 import Error404Page from '../pages/errors/Error404';
 import ArtistDetailPage from '../pages/artist_detail';
 import AlbumPage from "../pages/album"
@@ -18,10 +17,6 @@ export default [
     //     url: '/old-home',
     //     component: OldHome
     // },
-    {
-        url: '/about',
-        component: AboutPage
-    },
     {
         url: '/artist/:id',
         component: ArtistDetailPage

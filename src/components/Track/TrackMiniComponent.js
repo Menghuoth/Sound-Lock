@@ -12,10 +12,16 @@ const { Meta } = Item
 const TrackMiniComponent = props => {
     const { track } = props
 
-    const artist = track.artist
+
+    const artist = track.artist;
+    console.log(track )
     if( track === undefined ) {
         return <></>
     }
+
+    // if(typeof artist === 'undefined'){
+    //     return <></>
+    // }
 
     return (
         <Item 
@@ -23,7 +29,7 @@ const TrackMiniComponent = props => {
             <Meta
                 avatar={<Avatar shape={"square"} size={"large"} src={track.imageUrl} />}
                 title={track.name}
-                description={(<Link to={`/artist/${artist.key}`}>{artist.name}</Link>)}
+                description={(<Link to={`/artist/${track.artist.key}`}>{track.artist.name}</Link>)}
             />
             <TrackPlayerComponent track={track}/>
         </Item>

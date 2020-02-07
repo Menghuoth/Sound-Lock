@@ -14,7 +14,7 @@ function RecentlyAddedAreaComponent(props) {
     const { tracks } = props
     return (
         <Card>
-            <div className={""}>
+            <div className={"RecentlySongs"}>
                 <Title level={4}>Recently Added </Title>
             </div>
 

@@ -23,7 +23,7 @@ const ArtistArchievementTableComponent = (props) => {
                 // column title
                 title: "#",
                 // column width
-                width: 20,
+                width: 50,
                 // render cell when need
                 // render("data from index" , row , rowIndex)
                 render: key => key + 1
@@ -44,19 +44,19 @@ const ArtistArchievementTableComponent = (props) => {
                 key: "song",
                 dataIndex: "name",
                 title: "Song",
-                width:"150px"
+                width:"100px"
             },
             {
                 key: "artist",
                 dataIndex: "artist",
                 title: "Artist",
-                width:"150px"
+                width:"250px"
             },
             {
                 key:"action",
                 title: "Action",
                 fixed: "right",
-                width:"50px",
+                width:"200px",
                 render:(uselessString, track) => <TrackPlayerComponent track={track} />
             }
         ]
@@ -79,7 +79,7 @@ const ArtistArchievementTableComponent = (props) => {
                     <Avatar
                         src={link}
                         shape="square"
-                        size="large" />
+                        size="100px" />
                 )
             },
             {

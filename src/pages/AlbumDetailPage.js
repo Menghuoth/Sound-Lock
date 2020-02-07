@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {Row, Col} from 'antd';
 
-import withDefaultLayout from "../layouts/withDefaultLayout";
 import AlbumImage from "../components/album-details/AlbumImage";
 import AlbumInfo from "../components/album-details/AlbumInfo";
 import AlbumDetailList from "../components/album-details/AlbumDetailList";
+import ClientLayout from "../layouts/client_layout";
 
 
 const AlbumDetailPage = props => {
@@ -12,6 +12,7 @@ const AlbumDetailPage = props => {
 
 
     return (
+        <ClientLayout>
             <Row style={{background: '#fff', paddingTop: '50px'}}>
                 <Col xs={24} md={8}>
                     <AlbumImage/>
@@ -21,7 +22,8 @@ const AlbumDetailPage = props => {
                     <AlbumDetailList/>
                 </Col>
             </Row>
+        </ClientLayout>
     );
 };
 
-export default withDefaultLayout(AlbumDetailPage);
+export default AlbumDetailPage;
