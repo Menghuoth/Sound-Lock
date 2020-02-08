@@ -56,7 +56,7 @@ export const getTracksByArtistService = async (key) =>{
     const MOCK_DATA = Array(12).fill("").map((uselessString, index) => ({
         key: index,
         name: `${key}'s Song #${index}`,
-        imageUrl: `https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg`,
+        imageUrl: `https://www.hdwallpapers.in/download/heartbeats_abstract-1600x900.jpg`,
         artist: `Artist #${index}`,
         trackUrl:`/assets/test.mp3`,
         ...ADDITION_TRACK_INFO(index)

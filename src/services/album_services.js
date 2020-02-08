@@ -4,7 +4,7 @@ export const getAlbumsByArtistService = async (key) => {
     const MOCK_DATA = Array(12).fill("").map((uselessString, index) => ({
         key: index,
         name: `${key}'s Album #${index}`,
-        imageUrl: `https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg`,
+        imageUrl: `https://wallpaperaccess.com/full/1792336.jpg`,
         artist: `Artist #${index}`,
         total_songs: randomNumber(1000)
 

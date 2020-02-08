@@ -41,7 +41,7 @@ export const getPopularArtistsService = async ( ) => {
 export const getArtistByIDService = async (id) => {
     const MOCK_DATA = {
         name: `Artist #${id}`,
-        imageUrl: `https://marketplace.canva.com/EADaocq0Nb4/1/0/800w/canva-yellow-retro-music-instruments-desktop-wallpaper-icKNh4QTrFU.jpg`
+        imageUrl: `https://www.fullhdwpp.com/wp-content/uploads/Geometry-Circles-and-Triangles_www.FullHDWpp.com_.png`
     }
     return {
         data : MOCK_DATA

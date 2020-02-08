@@ -26,7 +26,7 @@ const ArtistInfoAreaComponent = (props) => {
     }
     return (
         // these style make avatar and info responsive on phone
-        <Row style={{display: "flex",flexWrap:"wrap", alignItems:"center",justifyContent:"center",textAlign:"centter"}}>
+        <Row style={{display: "flex",flexWrap:"wrap", alignItems:"center",justifyContent:"center",textAlign:"center"}}>
             <Col sm={24} style={{width:"fit-content"}}>
                 <Avatar
                     src={artist.imageUrl}

@@ -43,18 +43,13 @@ const ArtistArchievementTableComponent = (props) => {
             {
                 key: "song",
                 dataIndex: "name",
-                title: "Song"
-            },
-            {
-                key: "artist",
-                dataIndex: "artist",
-                title: "Artist"
+                title: "Song",
+                width: "150px"
             },
             {
                 key:"action",
                 title: "Action",
-                fixed: "right",
-                width:"200px",
+                width: "50px",
                 render:(uselessString, track) => <TrackPlayerComponent track={track} />
             }
         ]
@@ -77,7 +72,7 @@ const ArtistArchievementTableComponent = (props) => {
                     <Avatar
                         src={link}
                         shape="square"
-                        size="100px" />
+                        size= "large" />
                 )
             },
             {
@@ -90,17 +85,18 @@ const ArtistArchievementTableComponent = (props) => {
                 key: "artist",
                 dataIndex: "artist",
                 title: "Artist",
-                width:"150px"
+                width:"50px"
             }
         ]
     }
 
 
     return (
+
         <Table
+            style={{padding: '0px 150px'}}
             columns={columns}
             dataSource={tableData}
-            scroll={{x: "100%"}}
         />
     )
 }

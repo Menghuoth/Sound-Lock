@@ -23,7 +23,7 @@ function ArtisanPopularAreaComponent (props){
             {/*</div>*/}
 
             <div className={styles.categoryCardHeader}>
-                <Title level={4}>Artist </Title>
+                <Title level={4}>Artist</Title>
                 <SizedBox width={"10px"} />
                 <Menu
                     onClick={param => onArtistChanged(param.key)}
@@ -44,7 +44,7 @@ function ArtisanPopularAreaComponent (props){
 
                 {artists.map(artist => {
                     return (
-                        <Col sm={12} md={6} style={{width:"fit-content"}}>
+                        <Col sm={12} md={6} style={{width:"fit-content",padding:'0px 40px'}}>
                             <ArtistComponent
                                 artist={artist}
                             />

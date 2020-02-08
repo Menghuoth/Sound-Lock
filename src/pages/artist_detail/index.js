@@ -63,7 +63,7 @@ function ArtistDetailPage(props) {
 
             <SizedBox />
 
-            <Menu
+            <Menu style={{padding: '0px 150px'}}
                 selectedKeys={artistArchievementType}
                 mode={"horizontal"}
                 onClick={(params) => setArtistArchievementType(params.key)}
