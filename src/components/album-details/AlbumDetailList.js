@@ -2,6 +2,9 @@ import React from "react";
 
 import { Table, Divider, Tag } from 'antd';
 import Avatar from "antd/es/avatar";
+import TrackComponent from "../Track/TrackComponent";
+import {Col} from "antd/es/grid";
+import TrackPlayerComponent from "../Player/TrackPlayer";
 
 const columns = [
     {
@@ -35,13 +38,9 @@ const columns = [
     {
         title: 'Action',
         key: 'action',
-        render: (text, record) => (
-            <span>
-        <a>Invite {record.name}</a>
-        <Divider type="vertical" />
-        <a>Delete</a>
-      </span>
-        ),
+        width: '150px',
+        render:(uselessString, track) => <TrackPlayerComponent track={track} />
+
     },
 ];
 
@@ -73,9 +72,9 @@ const data = [
 ];
 
 const AlbumDetailList = props => {
+
     return (
         <Table columns={columns} dataSource={data} pagination={false}/>
-
     );
 };
 

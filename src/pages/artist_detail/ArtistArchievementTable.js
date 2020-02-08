@@ -43,14 +43,12 @@ const ArtistArchievementTableComponent = (props) => {
             {
                 key: "song",
                 dataIndex: "name",
-                title: "Song",
-                width:"100px"
+                title: "Song"
             },
             {
                 key: "artist",
                 dataIndex: "artist",
-                title: "Artist",
-                width:"250px"
+                title: "Artist"
             },
             {
                 key:"action",

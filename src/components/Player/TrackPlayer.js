@@ -48,7 +48,7 @@ const TrackPlayerComponent = (props) => {
     }
 
     return (
-        <Row type="flex" justify="center">
+        <Row type="flex" justify="start">
             <img src={playIcon} alt="play" onClick={onPlayClick} style={{width: '36px', height: '36px', cursor: 'pointer'}}/>
             <Divider type="vertical"/>
             <img src={downloadIcon} alt="download" onClick={onDownloadClick} style={{width: '36px', height: '36px', cursor: 'pointer'}}/>
