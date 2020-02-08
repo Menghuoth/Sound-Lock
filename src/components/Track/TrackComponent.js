@@ -8,7 +8,7 @@ import TrackPlayerComponent from "../Player/TrackPlayer"
 // const { Meta } = Card
 const { Title } = Typography;
 
-const TrackComponent = props => {
+const           TrackComponent = props => {
     const { track } = props
 
     if( track === undefined ) {

@@ -66,13 +66,6 @@ const ArtistPage = props => {
 
     return (
         <ClientLayout>
-            {/*<Row>*/}
-            {/*    <Col sm={12} md={6} style={{width: "fit-content"}}>*/}
-            {/*        <ArtistComponent*/}
-            {/*            artist={artists}*/}
-            {/*        />*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
             <Card>
                 <div className={styles.albumsCardHeader}>
                     <Title level={4}>Artist </Title>

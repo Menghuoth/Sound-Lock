@@ -167,6 +167,19 @@ import {
               ],
             })(<Input.Password />)}
           </Form.Item>
+          <Form.Item label="Confirm Password" hasFeedback>
+            {getFieldDecorator('confirm', {
+              rules: [
+                {
+                  required: true,
+                  message: 'Please confirm your password!',
+                },
+                {
+                  validator: this.compareToFirstPassword,
+                },
+              ],
+            })(<Input.Password onBlur={this.handleConfirmBlur} />)}
+          </Form.Item>
           <Form.Item {...tailFormItemLayout}>
             <Button type="primary" htmlType="submit">
               Register

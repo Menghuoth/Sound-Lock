@@ -11,7 +11,7 @@ function capitalize  (str= "")  {
 // Mock Category
 // Please replace it with request from server later
 export const getAvailableCategoriesService = async () => {
-    const MOCK_DATA = ["pop","rock","sad"].map( type =>  ({
+    const MOCK_DATA = ["Khmer","Chinese","English"].map( type =>  ({
         label: capitalize(type),
         key: type,
     }))

@@ -19,15 +19,15 @@
   "categories": [
     {
       "id": 1,
-      "label": "POP"
+      "label": "Khmer"
     },
     {
       "id": 2,
-      "label": "ROCK"
+      "label": "Chinese"
     },
     {
       "id": 3,
-      "label": "SAD"
+      "label": "English"
     }
   ],
   "artists": [
